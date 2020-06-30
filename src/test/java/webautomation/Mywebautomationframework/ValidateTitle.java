@@ -48,7 +48,7 @@ public class ValidateTitle extends Testbase {
 		//compare the text from the browser with actual value
 	String tiltletext= h1.gettitle().getText();
 	
-	Assert.assertEquals(tiltletext, "Business Plans Include");
+	Assert.assertEquals(tiltletext, "Business Plans Include1");
 	log.info("successfully validated title text");
 	}
 	

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="webautomation.Mywebautomationframework.ValidateTitle" class="method navigator-link" hash-for-method="basepagenavigation">basepagenavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +121,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="webautomation.Mywebautomationframework.ValidateTitle" class="method navigator-link" hash-for-method="basepagenavigation">basepagenavigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="webautomation.Mywebautomationframework.HomePageTest" class="method navigator-link" hash-for-method="basepagenavigation(abc@test.com, 123456)">basepagenavigation(abc@test.com, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -118,11 +132,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="webautomation.Mywebautomationframework.HomePageTest" class="method navigator-link" hash-for-method="basepagenavigation(def@test.com, 1234)">basepagenavigation(def@test.com, 1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="webautomation.Mywebautomationframework.HomePageTest" class="method navigator-link" hash-for-method="basepagenavigation(abc@test.com, 123456)">basepagenavigation(abc@test.com, 123456)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,10 +146,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webautomation.Mywebautomationframework.ValidateMenu</span>
+              <img src="failed.png"/>
+              <span class="class-name">webautomation.Mywebautomationframework.ValidateTitle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -148,16 +157,32 @@
                   <a name="basepagenavigation">
                   </a> <!-- basepagenavigation -->
                   <span class="method-name">basepagenavigation</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Business Plans Include1] but found [Business Plans Include]
+	at webautomation.Mywebautomationframework.ValidateTitle.basepagenavigation(ValidateTitle.java:51)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">webautomation.Mywebautomationframework.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="basepagenavigation(abc@test.com, 123456)">
+                  </a> <!-- basepagenavigation(abc@test.com, 123456) -->
+                  <span class="method-name">basepagenavigation</span>
+                  <span class="parameters">(abc@test.com, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="basepagenavigation(ghi@test.com, 1234567)">
@@ -174,20 +199,12 @@
                   <span class="parameters">(def@test.com, 1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="basepagenavigation(abc@test.com, 123456)">
-                  </a> <!-- basepagenavigation(abc@test.com, 123456) -->
-                  <span class="method-name">basepagenavigation</span>
-                  <span class="parameters">(abc@test.com, 123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">webautomation.Mywebautomationframework.ValidateTitle</span>
+              <span class="class-name">webautomation.Mywebautomationframework.ValidateMenu</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -208,18 +225,21 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;validationg one of the menu on home page&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;webautomation.Mywebautomationframework.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;validating one of the menu on home page&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;webautomation.Mywebautomationframework.ValidateMenu&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- validationg one of the menu on home page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;validating title in a page&quot;&gt;
+  &lt;/test&gt; &lt;!-- validating one of the menu on home page --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;validating title in a page&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;webautomation.Mywebautomationframework.ValidateTitle&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- validating title in a page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;validating login with 3 different credentials&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;validating login with 3 different credentials&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;webautomation.Mywebautomationframework.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -235,7 +255,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">validationg one of the menu on home page (1 class)</span>
+                <span class="test-name">validating one of the menu on home page (1 class)</span>
               </li>
               <li>
                 <span class="test-name">validating title in a page (1 class)</span>
@@ -271,28 +291,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basepagenavigation')
 data.setCell(0, 2, 'webautomation.Mywebautomationframework.HomePageTest')
-data.setCell(0, 3, 4032);
+data.setCell(0, 3, 6936);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'basepagenavigation')
 data.setCell(1, 2, 'webautomation.Mywebautomationframework.HomePageTest')
-data.setCell(1, 3, 1166);
+data.setCell(1, 3, 1334);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'basepagenavigation')
 data.setCell(2, 2, 'webautomation.Mywebautomationframework.HomePageTest')
-data.setCell(2, 3, 1116);
+data.setCell(2, 3, 1172);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'basepagenavigation')
 data.setCell(3, 2, 'webautomation.Mywebautomationframework.ValidateMenu')
-data.setCell(3, 3, 195);
+data.setCell(3, 3, 109);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'basepagenavigation')
 data.setCell(4, 2, 'webautomation.Mywebautomationframework.ValidateTitle')
-data.setCell(4, 3, 43);
+data.setCell(4, 3, 97);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -318,56 +338,76 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Mywebautomationframework.ValidateMenu</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basepagenavigation</span>
-                <span class="method-start">5740 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">5941 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Mywebautomationframework.ValidateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">6163 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">basepagenavigation(abc@test.com, 123456)</span>
+                <span class="method-start">5044 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.ValidateTitle</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">basepagenavigation</span>
+                <span class="method-start">10718 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.ValidateMenu</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">basepagenavigation</span>
-                <span class="method-start">11678 ms</span>
+                <span class="method-start">10854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">11722 ms</span>
+                <span class="method-start">10967 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webautomation.Mywebautomationframework.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">11901 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">basepagenavigation(abc@test.com, 123456)</span>
-                <span class="method-start">15774 ms</span>
-              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">basepagenavigation(def@test.com, 1234)</span>
-                <span class="method-start">19807 ms</span>
+                <span class="method-start">11982 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.ValidateTitle</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">12499 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webautomation.Mywebautomationframework.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">basepagenavigation(ghi@test.com, 1234567)</span>
-                <span class="method-start">20927 ms</span>
+                <span class="method-start">13154 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">22094 ms</span>
+                <span class="method-start">14492 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
