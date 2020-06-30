@@ -37,7 +37,7 @@ public class ValidateTitle extends Testbase {
 	}
 
 	@Test
-	public void basepagenavigation() throws IOException {
+	public void validatetitletext() throws IOException {
 
 	
 		

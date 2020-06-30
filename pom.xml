@@ -68,5 +68,10 @@
     <artifactId>commons-io</artifactId>
     <version>2.7</version>
 </dependency>
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.1.7</version>
+</dependency>
 	</dependencies>
 </project>

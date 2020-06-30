@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-30T18:25:58Z" name="Suite" finished-at="2020-06-30T18:26:13Z" duration-ms="14776">
+  <suite started-at="2020-06-30T19:17:28Z" name="Suite" finished-at="2020-06-30T19:17:55Z" duration-ms="26647">
     <groups>
     </groups>
-    <test started-at="2020-06-30T18:25:58Z" name="validating one of the menu on home page" finished-at="2020-06-30T18:26:10Z" duration-ms="12166">
+    <test started-at="2020-06-30T19:17:28Z" name="validating one of the menu on home page" finished-at="2020-06-30T19:17:34Z" duration-ms="5968">
       <class name="webautomation.Mywebautomationframework.ValidateMenu">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@32c726ee]" started-at="2020-06-30T18:25:58Z" name="initialize" finished-at="2020-06-30T18:26:09Z" duration-ms="10854" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@7e7b159b]" started-at="2020-06-30T19:17:28Z" name="initialize" finished-at="2020-06-30T19:17:34Z" duration-ms="5587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basepagenavigation()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@32c726ee]" started-at="2020-06-30T18:26:09Z" name="basepagenavigation" finished-at="2020-06-30T18:26:09Z" duration-ms="109" status="PASS">
+        <test-method signature="validatemenutext()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@7e7b159b]" started-at="2020-06-30T19:17:34Z" name="validatemenutext" finished-at="2020-06-30T19:17:34Z" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basepagenavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@32c726ee]" started-at="2020-06-30T18:26:09Z" name="teardown" finished-at="2020-06-30T18:26:10Z" duration-ms="1198" status="PASS">
+        </test-method> <!-- validatemenutext -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@7e7b159b]" started-at="2020-06-30T19:17:34Z" name="teardown" finished-at="2020-06-30T19:17:34Z" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- webautomation.Mywebautomationframework.ValidateMenu -->
     </test> <!-- validating one of the menu on home page -->
-    <test started-at="2020-06-30T18:25:58Z" name="validating title in a page" finished-at="2020-06-30T18:26:11Z" duration-ms="12815">
+    <test started-at="2020-06-30T19:17:35Z" name="validating title in a page" finished-at="2020-06-30T19:17:43Z" duration-ms="8451">
       <class name="webautomation.Mywebautomationframework.ValidateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@554e218]" started-at="2020-06-30T18:25:58Z" name="initialize" finished-at="2020-06-30T18:26:09Z" duration-ms="10717" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@c055c54]" started-at="2020-06-30T19:17:35Z" name="initialize" finished-at="2020-06-30T19:17:41Z" duration-ms="6557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basepagenavigation()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@554e218]" started-at="2020-06-30T18:26:09Z" name="basepagenavigation" finished-at="2020-06-30T18:26:09Z" duration-ms="97" status="FAIL">
+        <test-method signature="validatetitletext()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@c055c54]" started-at="2020-06-30T19:17:41Z" name="validatetitletext" finished-at="2020-06-30T19:17:41Z" duration-ms="54" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Business Plans Include1] but found [Business Plans Include]]]>
@@ -40,7 +40,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at webautomation.Mywebautomationframework.ValidateTitle.basepagenavigation(ValidateTitle.java:51)
+at webautomation.Mywebautomationframework.ValidateTitle.validatetitletext(ValidateTitle.java:51)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,32 +54,37 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
-at java.base/java.lang.Thread.run(Thread.java:844)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basepagenavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@554e218]" started-at="2020-06-30T18:26:11Z" name="teardown" finished-at="2020-06-30T18:26:11Z" duration-ms="312" status="PASS">
+        </test-method> <!-- validatetitletext -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@c055c54]" started-at="2020-06-30T19:17:43Z" name="teardown" finished-at="2020-06-30T19:17:43Z" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- webautomation.Mywebautomationframework.ValidateTitle -->
     </test> <!-- validating title in a page -->
-    <test started-at="2020-06-30T18:25:58Z" name="validating login with 3 different credentials" finished-at="2020-06-30T18:26:13Z" duration-ms="14776">
+    <test started-at="2020-06-30T19:17:43Z" name="validating login with 3 different credentials" finished-at="2020-06-30T19:17:55Z" duration-ms="11727">
       <class name="webautomation.Mywebautomationframework.HomePageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@34158c08]" started-at="2020-06-30T18:25:58Z" name="initialize" finished-at="2020-06-30T18:26:03Z" duration-ms="5013" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb2d00b]" started-at="2020-06-30T19:17:43Z" name="initialize" finished-at="2020-06-30T19:17:47Z" duration-ms="3845" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@34158c08]" started-at="2020-06-30T18:26:03Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T18:26:10Z" duration-ms="6936" status="PASS">
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb2d00b]" started-at="2020-06-30T19:17:47Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:17:49Z" duration-ms="2345" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,7 +100,7 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepagenavigation -->
-        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@34158c08]" started-at="2020-06-30T18:26:10Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T18:26:11Z" duration-ms="1172" status="PASS">
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb2d00b]" started-at="2020-06-30T19:17:49Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:17:51Z" duration-ms="1514" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +116,7 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepagenavigation -->
-        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@34158c08]" started-at="2020-06-30T18:26:11Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T18:26:13Z" duration-ms="1334" status="PASS">
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb2d00b]" started-at="2020-06-30T19:17:51Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:17:52Z" duration-ms="1670" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +132,7 @@ at java.base/java.lang.Thread.run(Thread.java:844)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basepagenavigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@34158c08]" started-at="2020-06-30T18:26:13Z" name="teardown" finished-at="2020-06-30T18:26:13Z" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb2d00b]" started-at="2020-06-30T19:17:52Z" name="teardown" finished-at="2020-06-30T19:17:55Z" duration-ms="2352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -33,7 +33,7 @@ public class ValidateMenu extends Testbase {
 	}
 
 	@Test
-	public void basepagenavigation() throws IOException {
+	public void validatemenutext() throws IOException {
 
 		// creating object of that class and invoking method of it
 		HomePage h1 = new HomePage(driver);
