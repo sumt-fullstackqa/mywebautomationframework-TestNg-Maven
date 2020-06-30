@@ -68,7 +68,7 @@ public class Testbase {
 		
 	}
 	
-	public void getScreenshotpath(String testcasename, WebDriver driver) throws IOException {
+	public String getScreenshotpath(String testcasename, WebDriver driver) throws IOException {
 		
 		TakesScreenshot ts=(TakesScreenshot) driver;
 	File source =ts.getScreenshotAs(OutputType.FILE);
@@ -77,6 +77,8 @@ public class Testbase {
 	
 	FileUtils.copyFile(source,new File(destinationFile));
 		
+	return destinationFile;
+	
 	}
 	
 }

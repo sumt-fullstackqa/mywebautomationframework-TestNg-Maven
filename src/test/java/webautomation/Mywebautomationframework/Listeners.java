@@ -20,10 +20,14 @@ public class Listeners extends Testbase implements ITestListener{
 	
 	ExtentReports extent =ExtentReporterNG.getReportObject();
 	
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 		test = extent.createTest(result.getMethod().getMethodName());
+		
+		extentTest.set(test);
 		
 	}
 
@@ -45,7 +49,8 @@ public class Listeners extends Testbase implements ITestListener{
 
 	public void onTestFailure(ITestResult result) {
 		
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
+		
 		// TODO Auto-generated method stub
 		// here we can write code to capture screenshot 
 		
@@ -60,8 +65,8 @@ public class Listeners extends Testbase implements ITestListener{
 			e.printStackTrace();
 		}
 		try {
-			
-			getScreenshotpath(testMethodName,driver);
+			extentTest.get().addScreenCaptureFromPath(getScreenshotpath(testMethodName,driver), result.getMethod().getMethodName());
+		
 			} catch (IOException e) {
 				
 				e.printStackTrace();
@@ -76,7 +81,7 @@ public class Listeners extends Testbase implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		
-		test.log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 }
