@@ -1,0 +1,5 @@
+19:51:11.693 [main] INFO  testbase.Testbase - successfully validated login with 3 different credentials
+19:54:52.068 [main] INFO  webautomation.Mywebautomationframework.ValidateTitle - driver is initialized
+19:54:53.984 [main] INFO  webautomation.Mywebautomationframework.ValidateTitle - Navigated to url
+19:54:54.107 [main] INFO  webautomation.Mywebautomationframework.ValidateMenu - successfully validated one of the menus text
+19:54:54.134 [main] INFO  webautomation.Mywebautomationframework.ValidateTitle - successfully validated title text

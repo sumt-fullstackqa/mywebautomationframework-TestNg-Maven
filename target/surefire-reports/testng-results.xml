@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-30T14:24:39Z" name="Suite" finished-at="2020-06-30T14:25:04Z" duration-ms="25440">
+    <groups>
+    </groups>
+    <test started-at="2020-06-30T14:24:39Z" name="Test" finished-at="2020-06-30T14:25:04Z" duration-ms="25440">
+      <class name="webautomation.Mywebautomationframework.HomePageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@2f1de2d6]" started-at="2020-06-30T19:54:39Z" name="initialize" finished-at="2020-06-30T19:54:43Z" duration-ms="4563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@51acdf2e]" started-at="2020-06-30T19:54:43Z" name="initialize" finished-at="2020-06-30T19:54:48Z" duration-ms="4552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@6a55299e]" started-at="2020-06-30T19:54:48Z" name="initialize" finished-at="2020-06-30T19:54:53Z" duration-ms="5719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@2f1de2d6]" started-at="2020-06-30T19:54:54Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:54:57Z" duration-ms="3463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@2f1de2d6]" started-at="2020-06-30T19:54:57Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:54:58Z" duration-ms="1145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[def@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@2f1de2d6]" started-at="2020-06-30T19:54:58Z" name="basepagenavigation" data-provider="getData" finished-at="2020-06-30T19:55:01Z" duration-ms="2400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghi@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@2f1de2d6]" started-at="2020-06-30T19:55:01Z" name="teardown" finished-at="2020-06-30T19:55:02Z" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@51acdf2e]" started-at="2020-06-30T19:55:02Z" name="teardown" finished-at="2020-06-30T19:55:03Z" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@6a55299e]" started-at="2020-06-30T19:55:03Z" name="teardown" finished-at="2020-06-30T19:55:04Z" duration-ms="924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webautomation.Mywebautomationframework.HomePageTest -->
+      <class name="webautomation.Mywebautomationframework.ValidateTitle">
+        <test-method signature="basepagenavigation()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@6a55299e]" started-at="2020-06-30T19:54:54Z" name="basepagenavigation" finished-at="2020-06-30T19:54:54Z" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+      </class> <!-- webautomation.Mywebautomationframework.ValidateTitle -->
+      <class name="webautomation.Mywebautomationframework.ValidateMenu">
+        <test-method signature="basepagenavigation()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@51acdf2e]" started-at="2020-06-30T19:54:53Z" name="basepagenavigation" finished-at="2020-06-30T19:54:54Z" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+      </class> <!-- webautomation.Mywebautomationframework.ValidateMenu -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
