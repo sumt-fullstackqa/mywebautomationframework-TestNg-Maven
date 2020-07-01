@@ -1,3 +1,27 @@
-21:09:40.183 [TestNG-tests-3] INFO  webautomation.Mywebautomationframework.HomePageTest - successfully validated login with 3 different credentials
-21:09:41.630 [TestNG-tests-3] INFO  webautomation.Mywebautomationframework.HomePageTest - successfully validated login with 3 different credentials
-21:09:42.680 [TestNG-tests-3] INFO  webautomation.Mywebautomationframework.HomePageTest - successfully validated login with 3 different credentials
+2020-07-02 01:15:16 INFO  class:38 - validated menu text successfully
+2020-07-02 01:16:35 INFO  class:38 - driver is initialized
+2020-07-02 01:16:36 INFO  class:38 - driver is initialized
+2020-07-02 01:16:36 INFO  class:38 - basepagenavigation Started
+2020-07-02 01:16:36 INFO  class:38 - 
+2020-07-02 01:16:39 INFO  class:38 - validatemenutext Started
+2020-07-02 01:16:39 INFO  class:38 - 
+2020-07-02 01:16:39 INFO  class:38 - validated menu text successfully
+2020-07-02 01:16:39 INFO  class:38 - validatemenutext Passed
+2020-07-02 01:16:42 INFO  class:38 - Navigated to url
+2020-07-02 01:16:42 INFO  class:38 - validatetitletext Started
+2020-07-02 01:16:42 INFO  class:38 - 
+2020-07-02 01:16:42 ERROR class:43 - expected [Business Plans Include1] but found [Business Plans Include]
+2020-07-02 01:16:43 INFO  class:38 - successfully validated login with 3 different credentials
+2020-07-02 01:16:43 INFO  class:38 - basepagenavigation Passed
+2020-07-02 01:16:43 INFO  class:38 - basepagenavigation Started
+2020-07-02 01:16:43 INFO  class:38 - 
+2020-07-02 01:16:45 INFO  class:38 - successfully validated login with 3 different credentials
+2020-07-02 01:16:45 INFO  class:38 - basepagenavigation Passed
+2020-07-02 01:16:45 INFO  class:38 - basepagenavigation Started
+2020-07-02 01:16:45 INFO  class:38 - 
+2020-07-02 01:16:46 INFO  class:38 - successfully validated login with 3 different credentials
+2020-07-02 01:16:46 INFO  class:38 - basepagenavigation Passed
+2020-07-02 01:16:46 INFO  class:38 - forgotpasswordtest Started
+2020-07-02 01:16:46 INFO  class:38 - 
+2020-07-02 01:16:47 INFO  class:38 - successfully validated Forgot password feature
+2020-07-02 01:16:47 INFO  class:38 - forgotpasswordtest Passed

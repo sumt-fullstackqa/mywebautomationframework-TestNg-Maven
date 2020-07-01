@@ -1,5 +1,0 @@
-20:29:29.864 [main] INFO  webautomation.Mywebautomationframework.HomePageTest - successfully validated login with 3 different credentials
-21:09:30.627 [TestNG-tests-2] INFO  webautomation.Mywebautomationframework.ValidateTitle - driver is initialized
-21:09:37.453 [TestNG-tests-2] INFO  webautomation.Mywebautomationframework.ValidateTitle - Navigated to url
-21:09:37.561 [TestNG-tests-1] INFO  webautomation.Mywebautomationframework.ValidateMenu - successfully validated one of the menus text
-21:09:37.577 [TestNG-tests-2] INFO  webautomation.Mywebautomationframework.ValidateTitle - successfully validated title text

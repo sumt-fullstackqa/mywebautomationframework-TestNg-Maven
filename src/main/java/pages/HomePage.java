@@ -6,6 +6,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -20,16 +21,30 @@ public class HomePage {
 	
 	By menu=By.xpath("//a[@class='nav-item'][contains(text(),'Pricing')]");
 	
+	By forgotpassword=By.xpath("//a[@class='reset_pass']");
+	
 	
 	public HomePage(WebDriver driver) {
 		
 		this.driver=driver;
 	}
 	
-	
-	public WebElement getlogin() {
+	public ForgotPassword forgotpassword() {
 		
-		return driver.findElement(Login);
+		driver.findElement(forgotpassword).click();
+		
+		return  new ForgotPassword(driver);
+				
+	}
+	
+	public LoginPage getlogin() {
+		
+	WebElement loginbutton= driver.findElement(Login);
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", loginbutton);
+		LoginPage l1 = new LoginPage(driver);
+		
+		return l1;
+		
 	}
 	public WebElement gettitle() {
 		

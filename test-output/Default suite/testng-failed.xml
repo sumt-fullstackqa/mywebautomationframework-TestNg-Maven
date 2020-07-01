@@ -5,9 +5,9 @@
     <classes>
       <class name="webautomation.Mywebautomationframework.ValidateTitle">
         <methods>
+          <include name="validatetitletext"/>
           <include name="initialize"/>
           <include name="teardown"/>
-          <include name="basepagenavigation"/>
         </methods>
       </class> <!-- webautomation.Mywebautomationframework.ValidateTitle -->
     </classes>

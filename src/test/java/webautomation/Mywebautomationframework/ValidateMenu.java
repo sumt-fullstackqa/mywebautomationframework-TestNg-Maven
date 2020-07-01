@@ -7,8 +7,6 @@ package webautomation.Mywebautomationframework;
 
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -19,8 +17,6 @@ import testbase.Testbase;
 
 public class ValidateMenu extends Testbase {
 	public WebDriver driver;
-	public static Logger log = LogManager.getLogger(ValidateMenu.class.getName());
-
 	@BeforeTest
 
 	public void initialize() throws IOException {
@@ -38,7 +34,7 @@ public class ValidateMenu extends Testbase {
 		// creating object of that class and invoking method of it
 		HomePage h1 = new HomePage(driver);
 		Assert.assertTrue(h1.getmenutext().isDisplayed());
-		log.info("successfully validated one of the menus text");
+		writeLogs("validated menu text successfully");
 	}
 
 	@AfterTest

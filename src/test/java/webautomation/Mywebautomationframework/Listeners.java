@@ -14,6 +14,7 @@ import com.aventstack.extentreports.Status;
 import testbase.Testbase;
 import utility.ExtentReporterNG;
 
+
 public class Listeners extends Testbase implements ITestListener{
 	
 	ExtentTest test;
@@ -24,6 +25,9 @@ public class Listeners extends Testbase implements ITestListener{
 	
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
+		
+		writeLogs(result.getMethod().getMethodName() + " Started");
+		writeLogs(result.getMethod().getDescription());
 		
 		test = extent.createTest(result.getMethod().getMethodName());
 		
@@ -37,17 +41,19 @@ public class Listeners extends Testbase implements ITestListener{
 		extent.flush();
 	}
 
-	public void onStart(ITestContext arg0) {
+	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
+		writeErrorLogs(result.getThrowable());
 		
 		extentTest.get().fail(result.getThrowable());
 		
@@ -73,13 +79,15 @@ public class Listeners extends Testbase implements ITestListener{
 			}
 	}
 
-	public void onTestSkipped(ITestResult arg0) {
+	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		
+		writeLogs("Skipped because of - "+ result.getThrowable());
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
+		
+		writeLogs(result.getMethod().getMethodName() + " Passed");
 		
 		extentTest.get().log(Status.PASS, "Test Passed");
 	}
