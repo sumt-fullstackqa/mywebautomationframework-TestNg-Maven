@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="Test">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="webautomation.Mywebautomationframework.Listeners"/>
+  </listeners>
+  <test name="validating one of the menu on home page">
     <classes>
       <class name="webautomation.Mywebautomationframework.ValidateMenu"/>
+    </classes>
+  </test> <!-- validating one of the menu on home page -->
+  <test name="validating title in a page">
+    <classes>
       <class name="webautomation.Mywebautomationframework.ValidateTitle"/>
+    </classes>
+  </test> <!-- validating title in a page -->
+  <test name="validating login with 3 different credentials">
+    <classes>
       <class name="webautomation.Mywebautomationframework.HomePageTest"/>
     </classes>
-  </test> <!-- Test -->
+  </test> <!-- validating login with 3 different credentials -->
+  <test parallel="tests" name="validating title in a page(failed)">
+    <classes>
+      <class name="webautomation.Mywebautomationframework.ValidateMenu">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- webautomation.Mywebautomationframework.ValidateMenu -->
+      <class name="webautomation.Mywebautomationframework.ValidateTitle">
+        <methods>
+          <include name="validatetitletext"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- webautomation.Mywebautomationframework.ValidateTitle -->
+      <class name="webautomation.Mywebautomationframework.HomePageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- webautomation.Mywebautomationframework.HomePageTest -->
+    </classes>
+  </test> <!-- validating title in a page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

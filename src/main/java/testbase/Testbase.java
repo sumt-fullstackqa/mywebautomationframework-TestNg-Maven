@@ -32,7 +32,7 @@ public class Testbase {
 		//chrome
 		
 		prop= new Properties();
-		FileInputStream fis= new FileInputStream("C:\\Users\\sumit.mishra\\eclipse-workspace\\Mywebautomationframework-master\\resources\\configfile\\config.properties");
+		FileInputStream fis= new FileInputStream("resources/configfile/config.properties");
 		
 		prop.load(fis);
 		
@@ -44,20 +44,20 @@ public class Testbase {
 		{
 			//write code for chhrome initilization
 			
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\sumit.mishra\\eclipse-workspace\\Mywebautomationframework-master\\resources\\drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "resources/drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 			
 		}
 		else if (browserName.equals("firefox"))
 		{
 			//write code for firefox initilization
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\sumit.mishra\\eclipse-workspace\\Mywebautomationframework-master\\resources\\drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "resources/drivers/geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		else if (browserName.equals("IE"))
 		{
 			//write code for IE initilization 
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\sumit.mishra\\eclipse-workspace\\Mywebautomationframework-master\\resources\\drivers\\MicrosoftWebDriver.exe");
+			System.setProperty("webdriver.ie.driver", "resources/drivers/MicrosoftWebDriver.exe");
 			driver=new InternetExplorerDriver();
 			
 		}

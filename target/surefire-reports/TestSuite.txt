@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.479 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.056 s <<< FAILURE! - in TestSuite
+webautomation.Mywebautomationframework.ValidateTitle.validatetitletext  Time elapsed: 0.155 s  <<< FAILURE!
+java.lang.AssertionError: expected [Business Plans Include1] but found [Business Plans Include]
+	at webautomation.Mywebautomationframework.ValidateTitle.validatetitletext(ValidateTitle.java:51)
+
