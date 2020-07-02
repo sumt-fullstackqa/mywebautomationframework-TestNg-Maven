@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="4" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-02T13:05:17Z" name="Suite" finished-at="2020-07-02T13:15:20Z" duration-ms="603652">
+    <groups>
+    </groups>
+    <test started-at="2020-07-02T13:05:17Z" name="validating title in a page" finished-at="2020-07-02T13:05:30Z" duration-ms="13010">
+      <class name="webautomation.Mywebautomationframework.ValidateTitle">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@5167f57d]" started-at="2020-07-02T18:35:17Z" name="initialize" finished-at="2020-07-02T18:35:28Z" duration-ms="11861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validatetitletext()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@5167f57d]" started-at="2020-07-02T18:35:28Z" name="validatetitletext" finished-at="2020-07-02T18:35:29Z" duration-ms="48" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Business Plans Include1] but found [Business Plans Include]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Business Plans Include1] but found [Business Plans Include]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at webautomation.Mywebautomationframework.ValidateTitle.validatetitletext(ValidateTitle.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetitletext -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateTitle@5167f57d]" started-at="2020-07-02T18:35:29Z" name="teardown" finished-at="2020-07-02T18:35:30Z" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webautomation.Mywebautomationframework.ValidateTitle -->
+    </test> <!-- validating title in a page -->
+    <test started-at="2020-07-02T13:05:17Z" name="validating login with 3 different credentials" finished-at="2020-07-02T13:05:34Z" duration-ms="17393">
+      <class name="webautomation.Mywebautomationframework.HomePageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:17Z" name="initialize" finished-at="2020-07-02T18:35:21Z" duration-ms="4819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:21Z" name="basepagenavigation" data-provider="getData" finished-at="2020-07-02T18:35:30Z" duration-ms="8453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:30Z" name="basepagenavigation" data-provider="getData" finished-at="2020-07-02T18:35:31Z" duration-ms="1452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[def@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:31Z" name="basepagenavigation" data-provider="getData" finished-at="2020-07-02T18:35:33Z" duration-ms="1439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ghi@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+        <test-method signature="forgotpasswordtest()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:33Z" name="forgotpasswordtest" finished-at="2020-07-02T18:35:34Z" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpasswordtest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.HomePageTest@6bb4dd34]" started-at="2020-07-02T18:35:34Z" name="teardown" finished-at="2020-07-02T18:35:34Z" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webautomation.Mywebautomationframework.HomePageTest -->
+    </test> <!-- validating login with 3 different credentials -->
+    <test started-at="2020-07-02T13:05:17Z" name="validating one of the menu on home page" finished-at="2020-07-02T13:15:20Z" duration-ms="603652">
+      <class name="webautomation.Mywebautomationframework.ValidateMenu">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@2fb0623e]" started-at="2020-07-02T18:35:17Z" name="initialize" finished-at="2020-07-02T18:35:17Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: headless chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F52NN2U', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01279563+2725219]
+	Ordinal0 [0x01178551+1672529]
+	Ordinal0 [0x01060359+525145]
+	Ordinal0 [0x01057A90+490128]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105F055+520277]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B809+505865]
+	Ordinal0 [0x0105B857+505943]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105D83E+514110]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105BBF6+506870]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B1B7+504247]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105337C+471932]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01056A87+486023]
+	Ordinal0 [0x01060FF0+528368]
+	Ordinal0 [0x0100D6C9+186057]
+	Ordinal0 [0x0100CA3D+182845]
+	Ordinal0 [0x0100A94B+174411]
+	Ordinal0 [0x00FF2528+75048]
+	Ordinal0 [0x00FF35A0+79264]
+	Ordinal0 [0x00FF3539+79161]
+	Ordinal0 [0x0118D607+1758727]
+	GetHandleVerifier [0x01396546+1050150]
+	GetHandleVerifier [0x01396291+1049457]
+	GetHandleVerifier [0x013A10D7+1094071]
+	GetHandleVerifier [0x01396B46+1051686]
+	Ordinal0 [0x01185B06+1727238]
+	Ordinal0 [0x0118EB7B+1764219]
+	Ordinal0 [0x0118ECE3+1764579]
+	Ordinal0 [0x011A4C05+1854469]
+	BaseThreadInitThunk [0x740638F4+36]
+	RtlUnicodeStringToInteger [0x77305DE3+595]
+	RtlUnicodeStringToInteger [0x77305DAE+542]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: headless chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-F52NN2U', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.4'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01279563+2725219]
+	Ordinal0 [0x01178551+1672529]
+	Ordinal0 [0x01060359+525145]
+	Ordinal0 [0x01057A90+490128]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105F055+520277]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B809+505865]
+	Ordinal0 [0x0105B857+505943]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105D83E+514110]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105BBF6+506870]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B1B7+504247]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105337C+471932]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01056A87+486023]
+	Ordinal0 [0x01060FF0+528368]
+	Ordinal0 [0x0100D6C9+186057]
+	Ordinal0 [0x0100CA3D+182845]
+	Ordinal0 [0x0100A94B+174411]
+	Ordinal0 [0x00FF2528+75048]
+	Ordinal0 [0x00FF35A0+79264]
+	Ordinal0 [0x00FF3539+79161]
+	Ordinal0 [0x0118D607+1758727]
+	GetHandleVerifier [0x01396546+1050150]
+	GetHandleVerifier [0x01396291+1049457]
+	GetHandleVerifier [0x013A10D7+1094071]
+	GetHandleVerifier [0x01396B46+1051686]
+	Ordinal0 [0x01185B06+1727238]
+	Ordinal0 [0x0118EB7B+1764219]
+	Ordinal0 [0x0118ECE3+1764579]
+	Ordinal0 [0x011A4C05+1854469]
+	BaseThreadInitThunk [0x740638F4+36]
+	RtlUnicodeStringToInteger [0x77305DE3+595]
+	RtlUnicodeStringToInteger [0x77305DAE+542]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:476)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at testbase.Testbase.initializeDriver(Testbase.java:80)
+	at webautomation.Mywebautomationframework.ValidateMenu.initialize(ValidateMenu.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validatemenutext()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@2fb0623e]" started-at="2020-07-02T18:45:20Z" name="validatemenutext" finished-at="2020-07-02T18:45:20Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatemenutext -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:webautomation.Mywebautomationframework.ValidateMenu@2fb0623e]" started-at="2020-07-02T18:45:20Z" name="teardown" finished-at="2020-07-02T18:45:20Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- webautomation.Mywebautomationframework.ValidateMenu -->
+    </test> <!-- validating one of the menu on home page -->
+  </suite> <!-- Suite -->
+</testng-results>

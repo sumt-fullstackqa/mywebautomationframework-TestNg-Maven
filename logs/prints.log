@@ -25,3 +25,54 @@
 2020-07-02 01:16:46 INFO  class:38 - 
 2020-07-02 01:16:47 INFO  class:38 - successfully validated Forgot password feature
 2020-07-02 01:16:47 INFO  class:38 - forgotpasswordtest Passed
+2020-07-02 18:33:19 INFO  class:39 - driver is initialized
+2020-07-02 18:33:19 INFO  class:39 - driver is initialized
+2020-07-02 18:33:19 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:33:19 INFO  class:39 - 
+2020-07-02 18:33:23 INFO  class:39 - Navigated to url
+2020-07-02 18:33:23 INFO  class:39 - validatetitletext Started
+2020-07-02 18:33:23 INFO  class:39 - 
+2020-07-02 18:33:23 INFO  class:39 - validatemenutext Started
+2020-07-02 18:33:23 INFO  class:39 - 
+2020-07-02 18:33:23 ERROR class:44 - expected [Business Plans Include1] but found [Business Plans Include]
+2020-07-02 18:33:23 INFO  class:39 - validated menu text successfully
+2020-07-02 18:33:23 INFO  class:39 - validatemenutext Passed
+2020-07-02 18:33:25 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:33:25 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:33:26 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:33:26 INFO  class:39 - 
+2020-07-02 18:33:50 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:33:50 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:33:50 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:33:50 INFO  class:39 - 
+2020-07-02 18:33:51 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:33:51 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:33:51 INFO  class:39 - forgotpasswordtest Started
+2020-07-02 18:33:51 INFO  class:39 - 
+2020-07-02 18:33:51 INFO  class:39 - successfully validated Forgot password feature
+2020-07-02 18:33:51 INFO  class:39 - forgotpasswordtest Passed
+2020-07-02 18:35:21 INFO  class:39 - driver is initialized
+2020-07-02 18:35:21 INFO  class:39 - driver is initialized
+2020-07-02 18:35:21 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:35:21 INFO  class:39 - 
+2020-07-02 18:35:28 INFO  class:39 - Navigated to url
+2020-07-02 18:35:28 INFO  class:39 - validatetitletext Started
+2020-07-02 18:35:28 INFO  class:39 - 
+2020-07-02 18:35:29 ERROR class:44 - expected [Business Plans Include1] but found [Business Plans Include]
+2020-07-02 18:35:30 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:35:30 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:35:30 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:35:30 INFO  class:39 - 
+2020-07-02 18:35:31 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:35:31 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:35:31 INFO  class:39 - basepagenavigation Started
+2020-07-02 18:35:31 INFO  class:39 - 
+2020-07-02 18:35:33 INFO  class:39 - successfully validated login with 3 different credentials
+2020-07-02 18:35:33 INFO  class:39 - basepagenavigation Passed
+2020-07-02 18:35:33 INFO  class:39 - forgotpasswordtest Started
+2020-07-02 18:35:33 INFO  class:39 - 
+2020-07-02 18:35:34 INFO  class:39 - successfully validated Forgot password feature
+2020-07-02 18:35:34 INFO  class:39 - forgotpasswordtest Passed
+2020-07-02 18:45:20 INFO  class:39 - validatemenutext Started
+2020-07-02 18:45:20 INFO  class:39 - 
+2020-07-02 18:45:20 INFO  class:39 - Skipped because of - null

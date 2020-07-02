@@ -1,0 +1,321 @@
+<html>
+<head>
+<title>TestNG:  validating one of the menu on home page</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>validating one of the menu on home page</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 02 18:35:17 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>603 seconds (603652 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webautomation.Mywebautomationframework.ValidateMenu.initialize()'><b>initialize</b><br>Test class: webautomation.Mywebautomationframework.ValidateMenu</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: headless chrome=83.0.4103.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F52NN2U&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01279563+2725219]
+	Ordinal0 [0x01178551+1672529]
+	Ordinal0 [0x01060359+525145]
+	Ordinal0 [0x01057A90+490128]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105F055+520277]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B809+505865]
+	Ordinal0 [0x0105B857+505943]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105D83E+514110]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105BBF6+506870]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B1B7+504247]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105337C+471932]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01056A87+486023]
+	Ordinal0 [0x01060FF0+528368]
+	Ordinal0 [0x0100D6C9+186057]
+	Ordinal0 [0x0100CA3D+182845]
+	Ordinal0 [0x0100A94B+174411]
+	Ordinal0 [0x00FF2528+75048]
+	Ordinal0 [0x00FF35A0+79264]
+	Ordinal0 [0x00FF3539+79161]
+	Ordinal0 [0x0118D607+1758727]
+	GetHandleVerifier [0x01396546+1050150]
+	GetHandleVerifier [0x01396291+1049457]
+	GetHandleVerifier [0x013A10D7+1094071]
+	GetHandleVerifier [0x01396B46+1051686]
+	Ordinal0 [0x01185B06+1727238]
+	Ordinal0 [0x0118EB7B+1764219]
+	Ordinal0 [0x0118ECE3+1764579]
+	Ordinal0 [0x011A4C05+1854469]
+	BaseThreadInitThunk [0x740638F4+36]
+	RtlUnicodeStringToInteger [0x77305DE3+595]
+	RtlUnicodeStringToInteger [0x77305DAE+542]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:476)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at testbase.Testbase.initializeDriver(Testbase.java:80)
+	at webautomation.Mywebautomationframework.ValidateMenu.initialize(ValidateMenu.java:26)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1531291549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1531291549'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from timeout: Timed out receiving message from renderer: 600.000
+  (Session info: headless chrome=83.0.4103.116)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F52NN2U&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;9.0.4&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01279563+2725219]
+	Ordinal0 [0x01178551+1672529]
+	Ordinal0 [0x01060359+525145]
+	Ordinal0 [0x01057A90+490128]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105F055+520277]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B809+505865]
+	Ordinal0 [0x0105B857+505943]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105D83E+514110]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105BBF6+506870]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105B1B7+504247]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01057739+489273]
+	Ordinal0 [0x01056EFE+487166]
+	Ordinal0 [0x01057135+487733]
+	Ordinal0 [0x01056B75+486261]
+	Ordinal0 [0x0105337C+471932]
+	Ordinal0 [0x01056B32+486194]
+	Ordinal0 [0x01056A87+486023]
+	Ordinal0 [0x01060FF0+528368]
+	Ordinal0 [0x0100D6C9+186057]
+	Ordinal0 [0x0100CA3D+182845]
+	Ordinal0 [0x0100A94B+174411]
+	Ordinal0 [0x00FF2528+75048]
+	Ordinal0 [0x00FF35A0+79264]
+	Ordinal0 [0x00FF3539+79161]
+	Ordinal0 [0x0118D607+1758727]
+	GetHandleVerifier [0x01396546+1050150]
+	GetHandleVerifier [0x01396291+1049457]
+	GetHandleVerifier [0x013A10D7+1094071]
+	GetHandleVerifier [0x01396B46+1051686]
+	Ordinal0 [0x01185B06+1727238]
+	Ordinal0 [0x0118EB7B+1764219]
+	Ordinal0 [0x0118ECE3+1764579]
+	Ordinal0 [0x011A4C05+1854469]
+	BaseThreadInitThunk [0x740638F4+36]
+	RtlUnicodeStringToInteger [0x77305DE3+595]
+	RtlUnicodeStringToInteger [0x77305DAE+542]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:476)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at testbase.Testbase.initializeDriver(Testbase.java:80)
+	at webautomation.Mywebautomationframework.ValidateMenu.initialize(ValidateMenu.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webautomation.Mywebautomationframework.ValidateMenu.teardown()'><b>teardown</b><br>Test class: webautomation.Mywebautomationframework.ValidateMenu</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='webautomation.Mywebautomationframework.ValidateMenu.validatemenutext()'><b>validatemenutext</b><br>Test class: webautomation.Mywebautomationframework.ValidateMenu</td>
+<td></td>
+<td>0</td>
+<td>webautomation.Mywebautomationframework.ValidateMenu@2fb0623e</td></tr>
+</table><p>
+</body>
+</html>

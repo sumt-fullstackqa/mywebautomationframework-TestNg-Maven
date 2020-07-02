@@ -13,11 +13,11 @@ public class LoginPage {
 
 	public WebDriver driver;
 
-	By email = By.xpath("//input[@placeholder='Email']");
+	private By email = By.xpath("//input[@placeholder='Email']");
 
-	By password = By.xpath("//input[@placeholder='Password']");
+	private By password = By.xpath("//input[@placeholder='Password']");
 
-	By loginbutton = By.xpath("//a[@class='btn btn-default submit']");
+	private By loginbutton = By.xpath("//a[@class='btn btn-default submit']");
 
 	public LoginPage(WebDriver driver) {
 
